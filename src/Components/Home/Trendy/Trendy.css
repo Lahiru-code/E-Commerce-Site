@@ -128,9 +128,9 @@
   cursor: pointer;
 }
 
-.trendyProductContainer:hover .trendyProduct_front {
+/* .trendyProductContainer:hover .trendyProduct_front {
   opacity: 0;
-}
+} */
 
 .trendyProductContainer h4 {
   position: relative;
@@ -145,11 +145,9 @@
   font-size: 14px;
   z-index: 3;
   cursor: pointer;
-}
-
-.trendyProductContainer:hover h4 {
   top: 270px;
 }
+
 
 .trendyProductInfo {
   display: flex;

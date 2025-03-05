@@ -67,16 +67,7 @@ const Navbar = () => {
                   BLOG
                 </Link>
               </li>
-              <li>
-                <Link to="/about" onClick={scrollToTop}>
-                  ABOUT
-                </Link>
-              </li>
-              <li>
-                <Link to="/contact" onClick={scrollToTop}>
-                  CONTACT
-                </Link>
-              </li>
+                
             </ul>
           </div>
         </div>

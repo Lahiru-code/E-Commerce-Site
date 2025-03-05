@@ -81,14 +81,14 @@ const ShoppingCart = () => {
               }}
             >
               <div className="shoppingCartTabsNumber">
-                <h3>01</h3>
+                {/* <h3>01</h3> */}
                 <div className="shoppingCartTabsHeading">
                   <h3>Shopping Bag</h3>
                   <p>Manage Your Items List</p>
                 </div>
               </div>
             </button>
-            <button
+            {/* <button
               className={activeTab === "cartTab2" ? "active" : ""}
               onClick={() => {
                 handleTabClick("cartTab2");
@@ -118,7 +118,7 @@ const ShoppingCart = () => {
                   <p>Review And Submit Your Order</p>
                 </div>
               </div>
-            </button>
+            </button> */}
           </div>
           <div className="shoppingCartTabsContent">
             {/* tab1 */}
@@ -239,31 +239,31 @@ const ShoppingCart = () => {
                           padding: "20px 0px",
                         }}
                       >
-                        {cartItems.length > 0 && (
-                          <div className="shopCartFooterContainer">
-                            <form>
-                              <input
-                                type="text"
-                                placeholder="Coupon Code"
-                              ></input>
-                              <button
-                                onClick={(e) => {
-                                  e.preventDefault();
-                                }}
-                              >
-                                Apply Coupon
-                              </button>
-                            </form>
-                            <button
-                              onClick={(e) => {
-                                e.preventDefault();
-                              }}
-                              className="shopCartFooterbutton"
-                            >
-                              Update Cart
-                            </button>
-                          </div>
-                        )}
+                        {/* {cartItems.length > 0 && (
+                          // <div className="shopCartFooterContainer">
+                          //   <form>
+                          //     <input
+                          //       type="text"
+                          //       placeholder="Coupon Code"
+                          //     ></input>
+                          //     <button
+                          //       onClick={(e) => {
+                          //         e.preventDefault();
+                          //       }}
+                          //     >
+                          //       Apply Coupon
+                          //     </button>
+                          //   </form>
+                          //   <button
+                          //     onClick={(e) => {
+                          //       e.preventDefault();
+                          //     }}
+                          //     className="shopCartFooterbutton"
+                          //   >
+                          //     Update Cart
+                          //   </button>
+                          // </div>
+                        )} */}
                       </th>
                     </tfoot>
                   </table>
@@ -372,53 +372,7 @@ const ShoppingCart = () => {
                     )}
                   </div>
                 </div>
-                <div className="shoppingBagTotal">
-                  <h3>Cart Totals</h3>
-                  <table className="shoppingBagTotalTable">
-                    <tbody>
-                      <tr>
-                        <th>Subtotal</th>
-                        <td>${totalPrice.toFixed(2)}</td>
-                      </tr>
-                      <tr>
-                        <th>Shipping</th>
-                        <td>
-                          <div className="shoppingBagTotalTableCheck">
-                            <p>${(totalPrice === 0 ? 0 : 5).toFixed(2)}</p>
-                            <p>Shipping to Al..</p>
-                            <p
-                              onClick={scrollToTop}
-                              style={{
-                                cursor: "pointer",
-                              }}
-                            >
-                              CHANGE ADDRESS
-                            </p>
-                          </div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <th>VAT</th>
-                        <td>${(totalPrice === 0 ? 0 : 11).toFixed(2)}</td>
-                      </tr>
-                      <tr>
-                        <th>Total</th>
-                        <td>
-                          ${(totalPrice === 0 ? 0 : totalPrice + 16).toFixed(2)}
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                  <button
-                    onClick={() => {
-                      handleTabClick("cartTab2");
-                      window.scrollTo({ top: 0, behavior: "smooth" });
-                    }}
-                    disabled={cartItems.length === 0}
-                  >
-                    Proceed to Checkout
-                  </button>
-                </div>
+           
               </div>
             )}
 

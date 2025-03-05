@@ -133,9 +133,9 @@
   transition: opacity 0.3s linear;
 }
 
-.sdProductContainer:hover .sdProduct_back {
+/* .sdProductContainer:hover .sdProduct_back {
   opacity: 1;
-}
+} */
 
 .sdProductImages .sdProduct_front {
   z-index: 2;
@@ -143,9 +143,9 @@
   cursor: pointer;
 }
 
-.sdProductContainer:hover .sdProduct_front {
+/* .sdProductContainer:hover .sdProduct_front {
   opacity: 0;
-}
+} */
 
 .sdProductContainer h4 {
   position: relative;
@@ -160,10 +160,11 @@
   font-size: 14px;
   z-index: 3;
   cursor: pointer;
+  top: 270px;
 }
 
 .sdProductContainer:hover h4 {
-  top: 270px;
+  
 }
 
 .sdProductInfo {

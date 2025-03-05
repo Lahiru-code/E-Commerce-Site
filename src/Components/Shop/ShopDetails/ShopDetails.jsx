@@ -82,7 +82,7 @@ const ShopDetails = () => {
       <div className="shopDetails">
         <div className="shopDetailMain">
           <div className="shopDetails__left">
-            <Filter />
+            {/* <Filter /> */}
           </div>
           <div className="shopDetails__right">
             <div className="shopDetailsSorting">
