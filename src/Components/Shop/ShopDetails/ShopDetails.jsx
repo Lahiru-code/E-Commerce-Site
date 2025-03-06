@@ -97,24 +97,7 @@ const ShopDetails = () => {
                 <IoFilterSharp />
                 <p>Filter</p>
               </div>
-              <div className="shopDetailsSort">
-                <select name="sort" id="sort">
-                  <option value="default">Default Sorting</option>
-                  <option value="Featured">Featured</option>
-                  <option value="bestSelling">Best Selling</option>
-                  <option value="a-z">Alphabetically, A-Z</option>
-                  <option value="z-a">Alphabetically, Z-A</option>
-                  <option value="lowToHigh">Price, Low to high</option>
-                  <option value="highToLow">Price, high to low</option>
-                  <option value="oldToNew">Date, old to new</option>
-                  <option value="newToOld">Date, new to old</option>
-                </select>
-                <div className="filterRight" onClick={toggleDrawer}>
-                  <div className="filterSeprator"></div>
-                  <IoFilterSharp />
-                  <p>Filter</p>
-                </div>
-              </div>
+  
             </div>
             <div className="shopDetailsProducts">
               <div className="shopDetailsProductsContainer">
